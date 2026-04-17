@@ -57,9 +57,21 @@ nav a {
   gap: 60px; /* Περισσότερος "αέρας" ανάμεσα στα κάδρα */
   padding: 50px 0;
 }
-
+.grid-item {
+  position: relative; /* ΤΟ ΚΛΕΙΔΙ: Κρατάει τον τίτλο φυλακισμένο μέσα στο κουτί! */
+  overflow: hidden; /* Αν η εικόνα κάνει ζουμ, κόβει ό,τι βγαίνει απ' τα όρια */
+  display: flex;
+  align-items: center; /* Φέρνει τον τίτλο στο κέντρο (κάθετα) */
+  justify-content: center; /* Φέρνει τον τίτλο στο κέντρο (οριζόντια) */
+  height: 750px; /* Το μεγάλο Vogue ύψος που βάλαμε */
+  background: #000; /* Μαύρο φόντο για βοήθεια */
+  text-decoration: none; /* Βγάζει τις υπογραμμίσεις από τα links */
+}
 /* --- ΟΙ ΕΙΚΟΝΕΣ --- */
 .grid-item img {
+  position: absolute;
+  top: 0;
+  left: 0
   width: 100%;
   /* Αυξήσαμε το ύψος στα 750px για αυτό το tall editorial look */
   height: 750px; 
@@ -77,11 +89,12 @@ nav a {
 
 /* --- Ο ΤΙΤΛΟΣ (WHITE & BOLD) --- */
 .grid-item span {
-  position: absolute;
+  position: relative;
+  z-index: 10;
   color: white !important;
   font-weight: bold !important;
   text-transform: uppercase;
-  letter-spacing: 5px; /* Πιο αραιά γράμματα */
+  letter-spacing: 3px; /* Πιο αραιά γράμματα */
   font-size: 1.8em; /* Μεγαλώσαμε και τη γραμματοσειρά για να ταιριάζει με τις μεγάλες εικόνες */
   text-shadow: 2px 2px 15px rgba(0,0,0,0.9);
   
