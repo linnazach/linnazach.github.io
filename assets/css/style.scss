@@ -77,3 +77,40 @@ nav a {
   letter-spacing: 2px;
   font-weight: bold;
 }
+
+/* Navigation Menu */
+nav {
+  text-align: center;
+  margin: 40px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+}
+nav a {
+  margin: 0 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #000;
+}
+
+
+
+/* 1. Κρύβουμε εντελώς την εργοστασιακή αριστερή στήλη */
+.wrapper > header {
+  display: none !important;
+}
+
+/* 2. Λέμε στο δικό μας περιεχόμενο να πιάσει όλο τον χώρο */
+section {
+  width: 100% !important;
+  float: none !important;
+  padding: 0 !important;
+}
+
+/* 3. Κεντράρουμε όλο το site και του δίνουμε τον αέρα ενός περιοδικού */
+.wrapper {
+  width: 90% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
