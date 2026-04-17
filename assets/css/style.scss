@@ -1,0 +1,15 @@
+@import "{{ site.theme }}";
+
+body {
+  background-color: #FCF5EB; 
+  font-family: "Times New Roman", Times, serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+}
+
+a {
+  color: #0f0f0f; 
+  text-decoration: none; 
+}
