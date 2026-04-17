@@ -12,7 +12,7 @@ layout: default
   <a href="/about">About</a>
   <a href="/projects">Coding Projects</a>
   <a href="/designs">3D Designs</a>
-  <a href="/posts">Posts</a>
+  <a href="/posts">Blog</a>
 </nav>
 
 <div class="grid-container">
