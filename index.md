@@ -4,7 +4,7 @@ layout: default
 
 <div style="text-align: center; padding: 40px 0;">
   <h1 style="font-size: 3.5em; letter-spacing: 6px; margin-bottom: 5px;">LINA ZACHARAKI</h1>
-  <p style="font-style: italic; color: #555;">Computer Science meets Fashion Tech</p>
+  <h3 style="font-size: 1.5em; color: #555;">Computer Science meets Fashion Tech</h3>
 </div>
 
 <nav>
