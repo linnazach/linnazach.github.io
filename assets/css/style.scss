@@ -81,13 +81,13 @@ nav a {
 
 .grid-item span {
   position: absolute;
-  background: transparent;
-  color: white;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  background: transparent!important;
+  color: white !important;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5)!important;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 1.1em;
-  border: none;
+  font-size: 1.1em!important;
+  border: none !important;
   box-shadow: none!important;
 }
 
