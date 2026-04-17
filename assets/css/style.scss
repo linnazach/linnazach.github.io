@@ -49,59 +49,48 @@ nav a {
   font-size: 0.9em;
 }
 
+/* --- ΤΟ CONTAINER ΤΩΝ ΕΙΚΟΝΩΝ --- */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 20px 0;
+  /* Αυξήσαμε το 400px σε 550px. Αυτό σημαίνει ότι οι εικόνες θα γίνουν πολύ πιο φαρδιές! */
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr)); 
+  gap: 60px; /* Περισσότερος "αέρας" ανάμεσα στα κάδρα */
+  padding: 50px 0;
 }
 
-.grid-item {
-  position: relative;
-  overflow: hidden;
-  height: 350px;
-  background-color: #eee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+/* --- ΟΙ ΕΙΚΟΝΕΣ --- */
 .grid-item img {
   width: 100%;
-  height: 100%;
+  /* Αυξήσαμε το ύψος στα 750px για αυτό το tall editorial look */
+  height: 750px; 
   object-fit: cover;
   opacity: 1 !important;
-  transition: transform 0.5s ease;
+  filter: brightness(1);
+  transition: all 0.6s ease-in-out;
 }
 
+/* --- HOVER ΕΦΕ (ΣΚΟΤΑΔΙ & ΖΟΥΜ) --- */
 .grid-item:hover img {
-  opacity: 1;
-  transform: scale(1.03);
+  transform: scale(1.02);
+  filter: brightness(0.5); /* Λίγο πιο σκούρο για να "πετάγεται" το λευκό κείμενο */
 }
+
+/* --- Ο ΤΙΤΛΟΣ (WHITE & BOLD) --- */
 .grid-item span {
   position: absolute;
-  /* ΒΑΣΙΚΗ ΛΕΥΚΗ & ΕΝΤΟΝΗ ΛΥΣΗ */
-  color: white !important; /* Λευκά γράμματα (επιβάλλεται με !important) */
-  font-weight: bold; /* Έντονα γράμματα */
-  background: transparent; /* Όχι πια κουτάκι! */
-  border: none;
-  box-shadow: none;
-
-  /* FASHION EDITORIAL ΠΙΝΕΛΙΕΣ */
+  color: white !important;
+  font-weight: bold !important;
   text-transform: uppercase;
-  letter-spacing: 3px; /* Αραίωση γραμμάτων για editorial feel */
-  font-size: 1.1em;
+  letter-spacing: 5px; /* Πιο αραιά γράμματα */
+  font-size: 1.8em; /* Μεγαλώσαμε και τη γραμματοσειρά για να ταιριάζει με τις μεγάλες εικόνες */
+  text-shadow: 2px 2px 15px rgba(0,0,0,0.9);
   
-  /* ΜΑΓΙΚΗ ΣΚΙΑ ΓΙΑ ΑΝΑΓΝΩΣΙΜΟΤΗΤΑ */
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Προσθέτει μια διακριτική μαύρη σκιά για να διαβάζεται το λευκό */
-
-  /* INTERACTIVE REVEAL (Εμφάνιση στο Hover) */
-  opacity: 0; /* Αρχικά κρυμμένο */
-  transition: opacity 0.3s ease-in-out; /* Ομαλή εμφάνιση */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
 }
 
-/* ΕΜΦΑΝΙΣΗ ΟΤΑΝ ΠΑΣ ΤΟ ΠΟΝΤΙΚΙ */
 .grid-item:hover span {
-  opacity: 1; /* Εμφανίζεται */
+  opacity: 1;
 }
 
