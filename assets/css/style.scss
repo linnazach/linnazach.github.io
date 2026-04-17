@@ -78,16 +78,30 @@ nav a {
   opacity: 1;
   transform: scale(1.03);
 }
-
 .grid-item span {
   position: absolute;
-  background: transparent!important;
-  color: red !important;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.5)!important;
+  /* ΒΑΣΙΚΗ ΛΕΥΚΗ & ΕΝΤΟΝΗ ΛΥΣΗ */
+  color: white !important; /* Λευκά γράμματα (επιβάλλεται με !important) */
+  font-weight: bold; /* Έντονα γράμματα */
+  background: transparent; /* Όχι πια κουτάκι! */
+  border: none;
+  box-shadow: none;
+
+  /* FASHION EDITORIAL ΠΙΝΕΛΙΕΣ */
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 1.5em!important;
-  border: none !important;
-  box-shadow: none!important;
+  letter-spacing: 3px; /* Αραίωση γραμμάτων για editorial feel */
+  font-size: 1.1em;
+  
+  /* ΜΑΓΙΚΗ ΣΚΙΑ ΓΙΑ ΑΝΑΓΝΩΣΙΜΟΤΗΤΑ */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Προσθέτει μια διακριτική μαύρη σκιά για να διαβάζεται το λευκό */
+
+  /* INTERACTIVE REVEAL (Εμφάνιση στο Hover) */
+  opacity: 0; /* Αρχικά κρυμμένο */
+  transition: opacity 0.3s ease-in-out; /* Ομαλή εμφάνιση */
+}
+
+/* ΕΜΦΑΝΙΣΗ ΟΤΑΝ ΠΑΣ ΤΟ ΠΟΝΤΙΚΙ */
+.grid-item:hover span {
+  opacity: 1; /* Εμφανίζεται */
 }
 
