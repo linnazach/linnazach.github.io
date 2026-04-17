@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<header style="text-align: center; padding: 50px 0;">
-  <h1 style="font-size: 3em; letter-spacing: 5px;">LINA ZACHARAKI</h1>
-  <p style="font-style: italic;">Computer Science meets Fashion Tech</p>
-</header>
+<div style="text-align: center; padding: 40px 0;">
+  <h1 style="font-size: 3.5em; letter-spacing: 6px; margin-bottom: 5px;">LINA ZACHARAKI</h1>
+  <p style="font-style: italic; color: #555;">Computer Science meets Fashion Tech</p>
+</div>
 
 <nav>
   <a href="/">Home</a>
@@ -24,7 +24,7 @@ layout: default
 
   <a href="/designs" class="grid-item">
     <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1964&auto=format&fit=crop" alt="3D">
-    <span>3D Design</span>
+    <span>3D Designs</span>
   </a>
 
   <a href="/posts" class="grid-item">
