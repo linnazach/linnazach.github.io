@@ -5,8 +5,8 @@ layout: default
 <div style="max-width: 800px; margin: 0 auto; padding: 40px 20px; text-align: left; line-height: 1.8;">
 
   <h1 style="text-align: center; font-size: 2.5em; letter-spacing: 4px; margin-bottom: 40px; text-transform: uppercase;">The Mind Behind the Code</h1>
-
-  <img src="https://images.unsplash.com/photo-1485230405346-71acb9518d9c?q=80&w=2097&auto=format&fit=crop" alt="Linna Zacharaki" style="width: 100%; height: 400px; object-fit: cover; margin-bottom: 30px; filter: grayscale(100%);">
+<img width="736" height="818" alt="image" src="https://github.com/user-attachments/assets/4dab7387-c4f6-49f2-80c0-48aaffb6401d" />
+alt="Linna Zacharaki" style="width: 100%; height: 400px; object-fit: cover; margin-bottom: 30px;">
 
   <p style="font-size: 2.2em; font-style: italic; text-align: center; margin-bottom: 40px; color: #555;">
     "I believe the future of fashion isn't just designed; it's programmed."
